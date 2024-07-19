@@ -64,4 +64,8 @@ contract DecentralizedIdentityVerification {
     ) external view returns (bool) {
         return identities[user].isVerified;
     }
+
+    function isVerifier(address verifier) external view returns (bool) {
+        return verifiers[verifier];
+    }
 }
